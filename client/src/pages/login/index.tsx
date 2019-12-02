@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.less';
-import { ILoginState } from '../../interfaces.d';
+import { ILoginState } from '../../types'
 
 class Login extends React.Component<object, ILoginState> {
   constructor(props: object) {
@@ -17,8 +17,8 @@ class Login extends React.Component<object, ILoginState> {
     return (
       <div className='login'>
         <div className='login-container'>
+					<div className='login-logo' />
           <div className='login-form'>
-            <div className='login-logo' />
             <input placeholder='邮箱' 
               onChange={this.handleMailChange}
             />
